@@ -47,3 +47,38 @@ jQuery(document).ready(function () {
   }
 
 }); 
+
+
+// Menú fixed
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 70 && ($(window).width() >= 0)) {
+
+    $('.navbar-custom').addClass('navbar-fixed');
+
+  } else {
+    $('.navbar-custom').removeClass('navbar-fixed');
+
+  }
+});
+
+
+// jQuery(function(){
+//     jQuery(window).scroll(function(){
+//         if(jQuery(this).scrollTop() < 20) {
+//             jQuery('.navbar-custom')
+//                 .css({'background':'transparent'})
+//                 .attr('src','<?php echo get_template_directory_uri();?>/assets/img/Enmascarar grupo 202.png');
+//         }
+//         if(jQuery(this).scrollTop() > 20) {
+//             jQuery('.navbar-custom')
+//                 .css({'background':'#fff',
+//     '-webkit-transition':'all 0.5s ease',
+//     '-moz-transition':'all 0.5s ease',
+//     '-ms-transition':'all 0.5s ease',
+//     '-o-transition':'all 0.5s ease',
+//     'transition':'all 0.5s ease'
+//                   })    
+//                 .attr('src','<?php echo get_template_directory_uri();?>/assets/img/Enmascarar grupo 202.png');
+//         }
+//     });
+// });

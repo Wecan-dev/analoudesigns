@@ -50,6 +50,16 @@ header {
 .navbar-custom {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  width: 100%;
+  position: fixed;
+  transition: 0.3s ea-in-out;
+}
+.navbar-custom.navbar-fixed{
+  background: #fff;
+  transition: 0.3s ea-in-out;
+}
+.navbar-custom.navbar-fixed .link-navbar{
+  color: #000000 !important;
 }
 
 .option-navbar {
@@ -66,7 +76,7 @@ header {
 }
 
 .banner-home {
-  height: 100vh;
+  height: 105vh;
   overflow: hidden;
   background-image: url('../img/bg-2.svg');
   background-size: cover;
@@ -76,7 +86,7 @@ header {
 
 .bg-banner {
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   background-image: url('../img/bg-3.svg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -93,7 +103,7 @@ header {
   font-weight: 900;
 }
 
-.subtitle-banner {
+.subtitle-banner p{
   font-size: 1rem;
   line-height: 1.8rem;
   color: #eee;
@@ -124,7 +134,7 @@ header {
   right: 0;
   background-size: cover;
   height: 99%;
-  background-image: url('../img/analodesign.jpg');
+  
 }
 
 .mask-banner {
@@ -153,12 +163,13 @@ header {
   padding: 1.5rem;
   box-shadow: 3px 7px 20px 9px #00000014;
   border-radius: 1rem;
-  margin: 5rem .5rem;
+  margin: 2rem .5rem;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: center;
+  width: 300px;
 }
 
 .icon-service {
@@ -178,6 +189,7 @@ header {
 
 .title-service, .description-service {
   margin-bottom: 0;
+  text-align: center;
 } 
 
 .title-service {
@@ -191,7 +203,7 @@ header {
   padding: 1rem 0 1.5rem 0;
 }
 
-.description-service  {
+.description-service p {
   font-size: 1rem;
   /* line-height: 1.5rem; */
   text-align: center;
@@ -523,4 +535,10 @@ label{
   #eapps-instagram-feed-1 {
     width: 100%!important;
   }
+}
+
+.box-services{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
 }
