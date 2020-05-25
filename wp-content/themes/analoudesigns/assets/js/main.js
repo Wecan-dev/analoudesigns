@@ -51,11 +51,15 @@ jQuery(document).ready(function () {
 
 // Menú fixed
 $(window).scroll(function () {
-  if ($(document).scrollTop() > 70 && ($(window).width() >= 0)) {
+  if ($(document).scrollTop() > 50 && ($(window).width() >= 0)) {
 
     $('.navbar-custom').addClass('navbar-fixed');
+    $('.logo-black').addClass('visible');
+    $('.logo-white').addClass('no-visible');
   } else {
     $('.navbar-custom').removeClass('navbar-fixed');
+    $('.logo-black').removeClass('visible');
+    $('.logo-white').removeClass('no-visible');
 
   }
 });
@@ -81,3 +85,6 @@ $(window).scroll(function () {
  //         }
  //     });
  // });
+
+
+

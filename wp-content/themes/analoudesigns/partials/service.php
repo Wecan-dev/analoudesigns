@@ -9,7 +9,7 @@
                 <?php $args = array( 'post_type' => 'servicio');?>   
                 <?php $loop = new WP_Query( $args ); ?>
                 <?php while ( $loop->have_posts() ) : $loop->the_post();?>
-                <div class="item-service animated wow bounceInRight" data-wow-duration="1s">
+                <div class="item-service animated wow bounceInLeft" data-wow-duration="1s">
                   <div class="icon-service">
                     <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                   </div>
@@ -59,10 +59,7 @@
               <img class="separator" src="<?php echo get_template_directory_uri();?>/assets/img/separator.svg" alt="">
             </div>
             <p class="description-service">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit hic fuga aliquid quasi architecto
-              accusantium! Officia laboriosam maxime fuga, distinctio incidunt atque ipsam nesciunt dolorem nihil
-              repudiandae provident sapiente sed Lorem.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              ¡hOla! Soy Ana Lulú, una apasionada por la papelería, el diseño y los detalles de amor. Toda esta pasión se refleja en mi marca Analo Designs, donde junto a un excelente equipo de trabajo, diseñamos y creamos productos personalizados basado en tus ideas. Somos fieles amantes del talento nacional y con profesionalismo nos esforzamos en darle vida a tus sueños en papel.
             </p>
           </div>
         </div>

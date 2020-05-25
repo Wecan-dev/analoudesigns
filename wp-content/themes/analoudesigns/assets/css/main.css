@@ -46,21 +46,36 @@ header {
   z-index: 99;
   width: 100%;
 }
-
 .navbar-custom {
   width: 100%;
   position: fixed;
-  transition: 0.3s ea-in-out;
+  transition: 1s;
 }
 .navbar-custom.navbar-fixed{
   background: #fff !important;
-  transition: 0.3s ea-in-out;
+  transition: 1s;
   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.25)
 }
 .navbar-custom.navbar-fixed .link-navbar{
   color: #000000 !important;
 }
-
+.navbar-custom.navbar-fixed .link-navbar:hover{
+  color: #ff8c95 !important;
+}
+.navbar-brand .logo-black{
+  display: none;
+}
+.navbar-brand .logo-white{
+  display: block;
+  transition: 1s;
+}
+.navbar-brand .logo-black.visible{
+  display: block;
+  transition: 1s;
+}
+.navbar-brand .logo-white.no-visible{
+  display:  none;
+}
 .navbar-light .navbar-brand{
   width: 120px;
 }
@@ -76,10 +91,13 @@ header {
 .link-navbar {
   color: #ffffff!important;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 600;
   padding: 0 1rem!important;
 }
-
+.link-navbar:hover{
+  color: #231F20 !important;
+  transition:.5s;
+}
 .banner-home {
   height: 105vh;
   overflow: hidden;
@@ -101,11 +119,10 @@ header {
 }
 
 .title-banner {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
   color: #ffffff;
-  text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 .subtitle-banner p{
@@ -175,7 +192,7 @@ header {
   flex-direction: column;
   position: relative;
   align-items: center;
-  width: 300px;
+  width: 335px;
 }
 
 .icon-service {
@@ -197,6 +214,8 @@ header {
 .title-service, .description-service {
   margin-bottom: 0;
   text-align: center;
+  font-size: 0.9rem;
+  color: #8f8f8f;
 } 
 
 .title-service {
@@ -395,9 +414,10 @@ label{
 /* FOOTER */
 
 .footer-landing {
-  background-image: url('../img/footer.svg');
+  background-image: url('../img/footer-light.svg');
   background-repeat: no-repeat;
   /* background-color: #ff8c95; */
+  padding-top: .6rem;
 }
 
 .footer-landing .padding-top-bottom {
@@ -411,12 +431,13 @@ label{
 } 
 
 .container-footer {
-  background-image: url('../img/footer-light.svg'); 
+  background-image: url('../img/footer.svg'); 
   background-size: cover;
 }
 
 .footer-landing a {
   text-decoration: none;
+  color: #fff;
 }
 
 .icon-contact {
@@ -446,11 +467,31 @@ label{
 }
 
 .contact-us i {
-  color: #E91E63;
+  color: #fff;
   font-size: 1.4rem;
 }
 
+.contact-us a:hover {
+    color: #ff3545;
+    transition: .5s;
+}
+
 .col-contact {
+}
+.ubicacion-footer{
+  display: flex;
+  padding-left: 20px;
+}
+.ubicacion-footer i{
+  color: #e91e63;
+  font-size: 20px
+}
+
+.ubicacion-footer p{
+  font-size: 15px;
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 600;
 }
 
 /*SCROLLBAR*/
@@ -548,4 +589,91 @@ label{
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
+}
+
+.banner-single{
+  background: url('../img/banner-product.svg');
+  height: 55vh;
+  width: 100%;
+  transform: translate(0px, -2px);
+}
+
+.banner-single__content{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.producto-single{
+  display: grid;
+  grid-template-columns:50% 50%;
+}
+
+.single-slider__img{
+  height: 50vh;
+  display: flex !important;
+  justify-content: center;
+  padding: 0 50px
+}
+
+.single-slider__img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content-single__text{
+  padding: 0 50px;
+}
+
+.single-text__title{
+  text-align: center;
+}
+.single-text__title p{
+  font-size: 2rem;
+  margin: 0;
+}
+
+.content-single__slider .slick-prev:before, .content-single__slider .slick-next:before{
+  font-family: 'FontAwesome';
+  color: #ff8c95;
+  font-size: 35px;
+}
+
+.content-single__slider .slick-prev:before {
+    content: "\f053";
+}
+
+.content-single__slider .slick-next:before {
+    content: "\f054";
+}
+
+.content-single__slider .slick-next{
+  right: 0;
+}
+
+.content-single__slider .slick-prev{
+  left: 0;
+}
+
+.single-text__categoria{
+  display: flex;
+  color: #ff3a48
+}
+
+.single-text__categoria ul{
+  list-style: none;
+  padding-left: 10px;
+  
+}
+
+.single-text__categoria ul a{
+  color: #ff3a48;
+  cursor: default;
+}
+
+.single-text__categoria ul a:hover{
+  text-decoration: none;
 }

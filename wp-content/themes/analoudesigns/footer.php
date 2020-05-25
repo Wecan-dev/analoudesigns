@@ -9,7 +9,6 @@
     <div class="container-footer padding-right-left padding-top-bottom">
       <div class="row">
         <div class="col-lg-6 feed-instagram col-md-6">
-          <div class="elfsight-app-5361803e-f3d5-47a3-86a3-79e957c6294a"></div>
         </div>
         <div class="col-lg-6 col-contact col-md-6">
           <div class="row">
@@ -51,6 +50,10 @@
                     </a>
                   </li>
                 </ul>
+                <div class="ubicacion-footer">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <p>Medellín, Colombia</p>
+                </div>
               </div>
             </div>
           </div>
@@ -70,6 +73,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <script src="<?php echo get_template_directory_uri();?>/assets/js/slick.min.js"></script>
+  <script src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
   <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/wow.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
 </body>
