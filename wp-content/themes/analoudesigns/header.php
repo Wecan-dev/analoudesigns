@@ -19,7 +19,7 @@
 <body>
 <header class="">
   <nav class="navbar navbar-custom navbar-expand-lg navbar-light padding-right-left">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
       <img class="logo-white" src="<?php echo get_template_directory_uri();?>/assets/img/Logotipo_Analo_Designs-white.svg">
       <img class="logo-black" src="<?php echo get_template_directory_uri();?>/assets/img/Logotipo_Analo_Designs-black.svg">
     </a>
@@ -30,16 +30,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav option-navbar">
         <li class="nav-item active">
-          <a class="nav-link link-navbar" href="#">INICIO <span class="sr-only">(current)</span></a>
+          <a class="nav-link link-navbar" href="<?php bloginfo('url'); ?>">INICIO <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link-navbar" href="#service">Servicios</a>
+          <a class="nav-link link-navbar" href="<?php bloginfo('url'); ?>/#service">Servicios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link-navbar" href="#">Productos</a>
+          <a class="nav-link link-navbar" href="<?php bloginfo('url'); ?>/#products">Productos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link-navbar" href="#contact">Contáctanos</a>
+          <a class="nav-link link-navbar" href="<?php bloginfo('url'); ?>/#contact">Contáctanos</a>
         </li>
       </ul>
     </div>

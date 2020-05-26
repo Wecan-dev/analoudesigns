@@ -1,134 +1,66 @@
-<section class="products">
-    <div class="padding-right-left padding-top-bottom">
-      <div class="box-title">
+<section class="products" id="products">
+  <div class="padding-right-left padding-top-bottom">
+    <div class="box-title">
         <h2 class="title-section">Nuestros Productos</h2>
         <img class="separator" src="<?php echo get_template_directory_uri();?>/assets/img/separator.svg" alt="">
-        <div class="controls">
-          <?php $args = array(
+      <div class="controls">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+               <?php $args = array(
 
-        'orderby' => 'slug',
-        'order' => 'ASC'
-      );
-      $product_categories = get_terms($args);
-      $count = count($product_categories);
-
-
-      if ($count > 0):
-        foreach ($product_categories as $product_category):
-          ?>
-
-            <button class="filter" data-filter=".category-1"><?php echo $product_category->name; ?></button>
-          <?php  endforeach; endif;
-           ?>
-        </div>
-      </div>
-
-      <div class="pager-list">
-        <!-- Pagination buttons will be generated here -->
-      </div>
-
-      <div id="Container" class="box-products">
-
-      <?php $args = array( 'post_type' => 'producto');?>   
-      <?php $loop = new WP_Query( $args ); ?>
-      <?php while ( $loop->have_posts() ) : $loop->the_post();?>
-        <div class="mix category-1" data-myorder="">
-          <img class="particle-5" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <img class="particle-6" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <div class="img-product" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/product-1.jpg')">
+                  'orderby' => 'slug',
+                  'order' => 'ASC'
+                );
+       $content_product1 = 1;
+          $product_categories = get_terms($args);?>
+      <?php foreach ($product_categories as $product_category):?>
+            <a class="nav-item nav-link <?php if($content_product1 == 1){echo ' active';} ?>" id="nav-home-tab" data-toggle="tab" href="#nav-<?php echo $content_product1; ?>" role="tab" aria-controls="nav-home" aria-selected="true"><?php echo $product_category->name; ?></a>
+             <?php $content_product1++; endforeach; ?>
           </div>
-          <div class="body-product">
-            <h2 class="title-product"><?php the_title(); ?></h2>
-            <a class="btn-product" href="<?php the_permalink(); ?>">See More
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      <?php  endwhile; ?>
-        <!-- <div class="mix category-1" data-myorder="2">
-          <img class="particle-5" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <img class="particle-6" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <div class="img-product" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/product-1.jpg')">
-          </div>
-          <div class="body-product">
-            <h2 class="title-product">Lorem Ipsum</h2>
-            <a class="btn-product" href="">See More
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="mix category-1" data-myorder="3">
-          <img class="particle-5" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <img class="particle-6" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <div class="img-product" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/product-1.jpg')">
-          </div>
-          <div class="body-product">
-            <h2 class="title-product">Lorem Ipsum</h2>
-            <a class="btn-product" href="">See More
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="mix category-2" data-myorder="4">
-          <img class="particle-5" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <img class="particle-6" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <div class="img-product" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/product-1.jpg')">
-          </div>
-          <div class="body-product">
-            <h2 class="title-product">Lorem Ipsum</h2>
-            <a class="btn-product" href="">See More
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="mix category-1" data-myorder="5">
-          <img class="particle-5" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <img class="particle-6" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <div class="img-product" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/product-1.jpg')">
-          </div>
-          <div class="body-product">
-            <h2 class="title-product">Lorem Ipsum</h2>
-            <a class="btn-product" href="">See More
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="mix category-1" data-myorder="6">
-          <img class="particle-5" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <img class="particle-6" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <div class="img-product" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/product-1.jpg')">
-          </div>
-          <div class="body-product">
-            <h2 class="title-product">Lorem Ipsum</h2>
-            <a class="btn-product" href="">See More
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="mix category-2" data-myorder="7">
-          <img class="particle-5" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <img class="particle-6" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <div class="img-product" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/product-1.jpg')">
-          </div>
-          <div class="body-product">
-            <h2 class="title-product">Lorem Ipsum</h2>
-            <a class="btn-product" href="">See More
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-        <div class="mix category-2" data-myorder="8">
-          <img class="particle-5" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <img class="particle-6" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
-          <div class="img-product" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/product-1.jpg')">
-          </div>
-          <div class="body-product">
-            <h2 class="title-product">Lorem Ipsum</h2>
-            <a class="btn-product" href="">See More
-              <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div> -->
+        </nav>      
       </div>
     </div>
-  </section>
+
+    <div class="pager-list">
+      <!-- Pagination buttons will be generated here -->
+    </div>
+
+      
+    <div class="tab-content" id="nav-tabContent">
+      <?php $args = array(
+
+                  'orderby' => 'slug',
+                  'order' => 'ASC'
+                );
+       $content_product1 = 1;
+          $product_categories = get_terms($args);?>
+      <?php foreach ($product_categories as $product_category):?>
+      <div class="tab-pane fade <?php if($content_product1 == 1){echo 'show active';} ?>" id="nav-<?php echo $content_product1; ?>" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="content-producto"> 
+        <?php $args = array ('post_type' => 'producto' , 'category__in' =>  $product_category->term_id) ?>
+         <?php $loop = new WP_Query( $args ); ?>
+            <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+              <a href="<?php the_permalink(); ?>" >
+          <div class="mix category" data-myorder="">
+                <img class="particle-5" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
+                <img class="particle-6" src="<?php echo get_template_directory_uri();?>/assets/img/particle-2.svg" alt="">
+                <div class="img-product" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/product-1.jpg')">
+                </div>
+                <div class="body-product">
+                  <h2 class="title-product"><?php the_title(); ?></h2>
+                  <a class="btn-product" href="<?php the_permalink(); ?>">See More
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+              </a>
+              <?php endwhile; ?>
+        </div>
+      </div>
+
+     <?php $content_product1++; endforeach; ?>
+
+    </div>
+  </div>
+</section>
+
