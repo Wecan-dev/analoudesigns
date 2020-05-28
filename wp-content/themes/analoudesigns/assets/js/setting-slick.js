@@ -9,30 +9,30 @@ $('.content-single__slider').slick({
   // cssEase: "linear",
   arrows: true,
   responsive: [{
-      breakpoint: 1200,
-      settings: {
+    breakpoint: 1200,
+    settings: {
       
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 900,
-      settings: {
-
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        autoplay: false,
-        arrows: false,
-        autoplaySpeed: 1000
-      }
+      infinite: true,
+      dots: false
     }
+  },
+  {
+    breakpoint: 900,
+    settings: {
+
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: false,
+      arrows: true,
+      autoplaySpeed: 1000
+    }
+  }
   ]
 });
 
@@ -50,31 +50,31 @@ $('.banner-slider').slick({
   // cssEase: "linear",
   arrows: true,
   responsive: [{
-      breakpoint: 1200,
-      settings: {
+    breakpoint: 1200,
+    settings: {
       
-        infinite: true,
-        dots: false,
-        arrows: false
-      }
-    },
-    {
-      breakpoint: 900,
-      settings: {
-        arrows: false
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        autoplay: false,
-        arrows: false,
-        autoplaySpeed: 1000
-      }
+      infinite: true,
+      dots: false,
+      arrows: false
     }
+  },
+  {
+    breakpoint: 900,
+    settings: {
+      arrows: false
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: false,
+      arrows: false,
+      autoplaySpeed: 1000
+    }
+  }
   ]
 });
 
@@ -89,30 +89,30 @@ $('.main-zona__content').slick({
   // cssEase: "linear",
   arrows: false,
   responsive: [{
-      breakpoint: 1200,
-      settings: {
+    breakpoint: 1200,
+    settings: {
       
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 900,
-      settings: {
-
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-        autoplay: false,
-        arrows: false,
-        autoplaySpeed: 1000
-      }
+      infinite: true,
+      dots: false
     }
+  },
+  {
+    breakpoint: 900,
+    settings: {
+
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: false,
+      arrows: false,
+      autoplaySpeed: 1000
+    }
+  }
   ]
 });
 
@@ -128,8 +128,8 @@ $(document).ready(function() {
     var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
     
     $progressBar
-      .css('background-size', calc + '% 100%')
-      .attr('aria-valuenow', calc );
+    .css('background-size', calc + '% 100%')
+    .attr('aria-valuenow', calc );
     
     $progressBarLabel.text( calc + '% completed' );
   });
@@ -152,8 +152,8 @@ $(document).ready(function() {
     var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
     
     $progressBar
-      .css('background-size', calc + '% 100%')
-      .attr('aria-valuenow', calc );
+    .css('background-size', calc + '% 100%')
+    .attr('aria-valuenow', calc );
     
     $progressBarLabel.text( calc + '% completed' );
   });
@@ -175,31 +175,31 @@ $('.about-video__slider').slick({
   dots: true,
   arrows: true,
   responsive: [{
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-   
-        autoplaySpeed: 1000
-      }
+    breakpoint: 1200,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: true
     }
+  },
+  {
+    breakpoint: 900,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      
+      autoplaySpeed: 1000
+    }
+  }
   ]
 });
 

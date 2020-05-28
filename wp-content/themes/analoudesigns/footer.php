@@ -1,9 +1,9 @@
 <footer class="footer-landing " id="contact">
 
 
-<?php $args = array( 'post_type' => 'footer');?>   
-<?php $loop = new WP_Query( $args ); ?>
-<?php if ( $loop->have_posts() ) : $loop->the_post();?>
+  <?php $args = array( 'post_type' => 'footer');?>   
+  <?php $loop = new WP_Query( $args ); ?>
+  <?php if ( $loop->have_posts() ) : $loop->the_post();?>
 
 
     <div class="container-footer padding-right-left padding-top-bottom">
@@ -18,15 +18,15 @@
                 <ul>
                   <li>
                     <i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
-                    <a href="<?php the_field('correo'); ?>">info@analodesigns.com</a>
+                    <a href="mailto:<?php the_field('correo'); ?>">info@analodesigns.com</a>
                   </li>
                   <li>
                     <i class="fa fa-phone mr-2" aria-hidden="true"></i>
-                    <a href="<?php the_field('telefono_1'); ?>">+584266606379</a>
+                    <a href="https://wa.me/<?php the_field('telefono'); ?>">+584266606379</a>
                   </li>
                   <li>
                     <i class="fa fa-whatsapp mr-2" aria-hidden="true"></i>
-                    <a href="<?php the_field('whataspp'); ?>">+584121601282</a>
+                    <a href="tel:+<?php the_field('whataspp'); ?>">+584121601282</a>
                   </li>
                 </ul>
               </div>
@@ -60,25 +60,25 @@
         </div>
       </div>
     </div>
-  <div class="pie-footer">
-    <p>Todos los derechos Reservados Analo Designs 2019 | Diseño y Desarrollo por <a target="_blank" href="https://slicegroup.co/">Slice Group</a></p>
-  </div>
-<?php  endif; ?>
+    <div class="pie-footer">
+      <p>Todos los derechos Reservados Analo Designs 2019 | Diseño y Desarrollo por <a target="_blank" href="https://slicegroup.co/">Slice Group</a></p>
+    </div>
+  <?php  endif; ?>
 
- </footer>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-  <script src="<?php echo get_template_directory_uri();?>/assets/js/slick.min.js"></script>
-  <script src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/wow.js"></script>
-  <script src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<script src="<?php echo get_template_directory_uri();?>/assets/js/slick.min.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/assets/js/setting-slick.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/wow.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
 </body>
 
 </html>
