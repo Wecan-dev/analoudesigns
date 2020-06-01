@@ -39,7 +39,7 @@
           <a class="nav-link link-navbar" href="<?php bloginfo('url'); ?>/#products">Productos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link-navbar" href="<?php bloginfo('url'); ?>/#contact">Contáctanos</a>
+          <a class="nav-link link-navbar" href="#contact">Contáctanos</a>
         </li>
       </ul>
     </div>

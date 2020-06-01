@@ -196,6 +196,7 @@ header {
   margin-bottom: 1rem;
   color: #ffffff;
   font-weight: 500;
+  z-index: 3;
 }
 
 .subtitle-banner p{
