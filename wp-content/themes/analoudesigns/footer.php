@@ -9,12 +9,16 @@
     <div class="container-footer padding-right-left padding-top-bottom">
       <div class="row">
         <div class="col-lg-6 feed-instagram col-md-6">
+          <!-- SnapWidget -->
+          <!-- SnapWidget -->
+          <script src="https://snapwidget.com/js/snapwidget.js"></script>
+          <iframe src="https://snapwidget.com/embed/833044" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
         </div>
         <div class="col-lg-6 col-contact col-md-6">
           <div class="row">
             <div class="col-lg-6">
               <div class="contact-us">
-                <h2 class="title-section">Contact Us</h2>
+                <h2 class="title-section">Contáctanos</h2>
                 <ul>
                   <li>
                     <i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
@@ -31,9 +35,8 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-6 ">
+            <div class="col-lg-6 col-redes">
               <div class="follow-us">
-                <h2 class="title-section">Follow Us</h2>
                 <ul>
                   <li>
                     <a href="<?php the_field('facebook'); ?>" target="_blank">
@@ -64,7 +67,9 @@
       <p>Todos los derechos Reservados Analo Designs 2019 | Diseño y Desarrollo por <a target="_blank" href="https://slicegroup.co/">Slice Group</a></p>
     </div>
   <?php  endif; ?>
+  
 
+  
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 crossorigin="anonymous"></script>

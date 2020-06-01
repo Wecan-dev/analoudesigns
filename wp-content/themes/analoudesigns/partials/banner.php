@@ -14,6 +14,9 @@
       <h1 class="padding-right-left title-banner"><?php the_title(); ?></h1>
     </div>
   <?php  endwhile; ?>
+  <a class="float-ws" href="https://wa.me/584266606379" target="_blank">
+    <i aria-hidden="true" class="fa fa-whatsapp"></i>
+  </a>
 </section>
 
 
