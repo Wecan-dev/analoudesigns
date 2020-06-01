@@ -12,7 +12,7 @@
           <!-- SnapWidget -->
           <!-- SnapWidget -->
           <script src="https://snapwidget.com/js/snapwidget.js"></script>
-          <iframe src="https://snapwidget.com/embed/833044" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
+          <iframe src="https://snapwidget.com/embed/833044" class="snapwidget-widget widget-instagram" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:80%; "></iframe>
         </div>
         <div class="col-lg-6 col-contact col-md-6">
           <div class="row">
@@ -55,7 +55,7 @@
                 </ul>
                 <div class="ubicacion-footer">
                   <i class="fa fa-map-marker" aria-hidden="true"></i>
-                  <p>Medellín, Colombia</p>
+                  <p>Venezuela - Colombia</p>
                 </div>
               </div>
             </div>

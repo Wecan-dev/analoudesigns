@@ -602,7 +602,7 @@ label{
       align-items: center;
       justify-content: center;
     }
-
+    
     @media screen and (min-width: 0px) and (max-width: 767px) {
       html {
         font-size: 15px;
@@ -650,6 +650,10 @@ label{
 
       .feed-instagram {
         margin-top: .5rem;
+        
+      }
+      .widget-instagram{
+        width: 100% !important;
       }
 
       .footer-landing .title-section {
