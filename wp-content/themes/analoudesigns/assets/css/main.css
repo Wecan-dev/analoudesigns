@@ -737,7 +737,8 @@ label{
         right: -4rem !important;
       }
       .category{
-        margin: 0 !important;
+        margin: 10px 0 !important;
+        width: 100% !important;
       }
       .controls{
         width: 100%;
