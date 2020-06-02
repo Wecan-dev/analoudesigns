@@ -635,6 +635,12 @@ label{
     }
     
     @media screen and (min-width: 0px) and (max-width: 767px) {
+      .content-single__text{
+        padding: 0 20px;
+      }
+      .producto-single{
+        margin-top: -10rem;
+      }
       html {
         font-size: 15px;
       }
