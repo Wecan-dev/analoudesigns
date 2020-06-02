@@ -64,7 +64,7 @@
       </div>
     </div>
     <div class="pie-footer">
-      <p>Todos los derechos Reservados Analo Designs 2019 | Diseño y Desarrollo por <a target="_blank" href="https://slicegroup.co/">Slice Group</a></p>
+      <p>Todos los derechos Reservados Analo Designs 2019 | Diseño y Desarrollo por <a target="_blank" href="http://wecan.company">We can! Company</a> y <a target="_blank" href="https://slicegroup.co/">Slice Group</a></p>
     </div>
   <?php  endif; ?>
   

@@ -1,6 +1,9 @@
 <section class="services" id="service">
     <img class="particle-3" src="<?php echo get_template_directory_uri();?>/assets/img/particle.svg" alt="" id="parallax-bg-3">
-    <img class="particle-4" src="<?php echo get_template_directory_uri();?>/assets/img/particle.svg" alt="" id="parallax-bg-4">
+        
+    <img alt="" class="particle-7" id="parallax-bg-7" src="<?php echo get_template_directory_uri();?>/assets/img/particle.svg" style="top: -96.8px;">
+    <img alt="" class="particle-4" id="parallax-bg-4" src="<?php echo get_template_directory_uri();?>/assets/img/particle.svg" style="top: -91px;">
+    <img alt="" class="particle-4" id="parallax-bg-8" src="<?php echo get_template_directory_uri();?>/assets/img/particle.svg" style="top: -142px;">
     <div class="padding-right-left padding-top-bottom">
       <div class="row">
         <div class="col-lg-7">

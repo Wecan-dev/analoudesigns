@@ -2,6 +2,7 @@
 <section class="banner-home">
   <img id="parallax-bg-1" class="particle-1" src="<?php echo get_template_directory_uri();?>/assets/img/particle.svg" alt="">
   <img id="parallax-bg-2" class="particle-2" src="<?php echo get_template_directory_uri();?>/assets/img/particle.svg" alt="">
+  <img id="parallax-bg-12" class="particle-1" src="<?php echo get_template_directory_uri();?>/assets/img/particle.svg" alt="">
   <?php $args = array( 'post_type' => 'banner');?>   
   <?php $loop = new WP_Query( $args ); ?>
   <?php while ( $loop->have_posts() ) : $loop->the_post();?>

@@ -192,7 +192,7 @@ header {
 }
 
 .title-banner {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 1rem;
   color: #ffffff;
   font-weight: 500;
@@ -207,7 +207,7 @@ header {
   letter-spacing: 1px;
 }
 
-.particle-1, .particle-2, .particle-3, .particle-4 {
+.particle-1, .particle-2, .particle-3, .particle-4, .particle-7{
   position: absolute;
 }
 
@@ -218,9 +218,39 @@ header {
 }
 
 .particle-2 {
+  width: 4rem;
+  right: 9%;
+  transform: translateY(36rem);
+
+}
+.particle-3 {
+  opacity: .2;
+  transform: translateY(14rem);
+  right: -3%;
+}
+.particle-7 {
+  width: 10rem;
+  transform: translateY(9rem);
+  left: 14%;
+  z-index: -1;
+  opacity: .3;
+}
+.particle-4 {
   width: 5rem;
-  right: 1%;
-  transform: translateY(32rem);
+  opacity: .2;
+  left: 30%;
+  transform: translateY(39rem);
+}
+#parallax-bg-8 {
+  left: 50%;
+  transform: translateY(17rem);
+  width: 4rem;
+  opacity: .3;
+}
+#parallax-bg-12 {
+  transform: translateY(9rem);
+  right: 49%;
+  width: 5rem;
 }
 
 .img-banner {

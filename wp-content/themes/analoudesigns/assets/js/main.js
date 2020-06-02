@@ -22,16 +22,6 @@ wow = new WOW(
 wow.init();
 
 
-// function parallax() {
-//   var img1 = document.getElementById('particle1');
-//   var img2 = document.getElementById('particle2');
-
-//   img1.style.top = +(window.pageYOffset / 50) + 'px';
-//   img2.style.top = +(window.pageYOffset / 40) + 'px';
-
-// }
-
-// window.addEventListener('scroll', parallax, false)
 jQuery(document).ready(function () {
   $(window).scroll(function (e) {
     parallaxScroll();
@@ -43,6 +33,7 @@ jQuery(document).ready(function () {
     $('#parallax-bg-2').css('top', (0 - (scrolled * .1)) + 'px');
     $('#parallax-bg-3').css('top', (0 - (scrolled * .1)) + 'px');
     $('#parallax-bg-4').css('top', (0 - (scrolled * .1)) + 'px');
+    $('#parallax-bg-8').css('top', (0 - (scrolled * .3)) + 'px');
 
   }
 
@@ -63,29 +54,6 @@ $(window).scroll(function () {
 
   }
 });
-
-
- // jQuery(function(){
- //     jQuery(window).scroll(function(){
- //         if(jQuery(this).scrollTop() < 70) {
- //             jQuery('.navbar-brand img')
- //                 .css({'display':'none'})
- //                 .attr('src','<?php echo get_template_directory_uri();?>/assets/img/Logotipo_Analo_Designs-black.svg');
- //         }
- //         if(jQuery(this).scrollTop() > 70) {
- //             jQuery('.navbar-brand img')
- //                 .css({'display':'block',
- //     '-webkit-transition':'all 0.5s ease',
- //     '-moz-transition':'all 0.5s ease',
- //     '-ms-transition':'all 0.5s ease',
- //     '-o-transition':'all 0.5s ease',
- //     'transition':'all 0.5s ease'
- //                   })    
- //                 .attr('src','<?php echo get_template_directory_uri();?>/assets/img/Logotipo_Analo_Designs-black.svg');
- //         }
- //     });
- // });
-
 
 function openModal() {
   document.getElementById("myModal").style.display = "block";
