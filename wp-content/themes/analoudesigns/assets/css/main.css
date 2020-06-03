@@ -598,6 +598,7 @@ label{
     .ubicacion-footer{
       display: flex;
       padding-left: 20px;
+      align-items: center;
     }
     .ubicacion-footer i{
       color: #e91e63;
@@ -605,10 +606,11 @@ label{
     }
 
     .ubicacion-footer p{
-      font-size: 15px;
+      font-size: 18px;
       color: #fff;
       margin-left: 10px;
-      font-weight: 600;
+      font-weight: 500;
+      margin-bottom: 0;
     }
 
     /*SCROLLBAR*/
@@ -1084,7 +1086,7 @@ label{
   }
 
   .pie-footer p{
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     margin: 0;
   }
