@@ -22,15 +22,21 @@
                 <ul>
                   <li>
                     <i class="fa fa-envelope-o mr-2" aria-hidden="true"></i>
-                    <a href="mailto:<?php the_field('correo'); ?>">info@analodesigns.com</a>
+                    <a href="mailto:<?php the_field('correo'); ?>"><?php the_field('correo'); ?></a>
                   </li>
                   <li>
-                    <i class="fa fa-phone mr-2" aria-hidden="true"></i>
-                    <a href="https://wa.me/<?php the_field('telefono'); ?>">+584266606379</a>
+                    <?php if(get_field('telefono')): ?>
+                      <i class="fa fa-phone mr-2" aria-hidden="true"></i>
+                      <a href="https://wa.me/<?php the_field('telefono'); ?>">+<?php the_field('telefono'); ?></a>
+                    <?php else: ?>
+                    <?php endif ?>
                   </li>
                   <li>
-                    <i class="fa fa-whatsapp mr-2" aria-hidden="true"></i>
-                    <a href="tel:+<?php the_field('whataspp'); ?>">+584121601282</a>
+                    <?php if(get_field('whataspp')): ?>
+                      <i class="fa fa-whatsapp mr-2" aria-hidden="true"></i>
+                      <a href="tel:+<?php the_field('whataspp'); ?>">+<?php the_field('whataspp'); ?></a>
+                    <?php else: ?>
+                    <?php endif ?>
                   </li>
                 </ul>
               </div>
