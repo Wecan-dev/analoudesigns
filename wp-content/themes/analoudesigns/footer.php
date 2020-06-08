@@ -25,16 +25,23 @@
                     <a href="mailto:<?php the_field('correo'); ?>"><?php the_field('correo'); ?></a>
                   </li>
                   <li>
-                    <?php if(get_field('telefono')): ?>
-                      <i class="fa fa-phone mr-2" aria-hidden="true"></i>
-                      <a href="https://wa.me/<?php the_field('telefono'); ?>">+<?php the_field('telefono'); ?></a>
+                    <?php if(get_field('whatsapp')): ?>
+                      <i class="fa fa-whatsapp mr-2" aria-hidden="true"></i>
+                      <a href="https://wa.me/<?php the_field('whatsapp'); ?>">+<?php the_field('whatsapp'); ?></a>
                     <?php else: ?>
                     <?php endif ?>
                   </li>
                   <li>
-                    <?php if(get_field('whataspp')): ?>
-                      <i class="fa fa-whatsapp mr-2" aria-hidden="true"></i>
-                      <a href="tel:+<?php the_field('whataspp'); ?>">+<?php the_field('whataspp'); ?></a>
+                    <?php if(get_field('telefono_1')): ?>
+                      <i class="fa fa-phone mr-2" aria-hidden="true"></i>
+                      <a href="tel:+<?php the_field('telefono_1'); ?>">+<?php the_field('telefono_1'); ?></a>
+                    <?php else: ?>
+                    <?php endif ?>
+                  </li>
+                  <li>
+                    <?php if(get_field('telefono_2')): ?>
+                      <i class="fa fa-phone mr-2" aria-hidden="true"></i>
+                      <a href="tel:+<?php the_field('telefono_2'); ?>">+<?php the_field('telefono_2'); ?></a>
                     <?php else: ?>
                     <?php endif ?>
                   </li>
